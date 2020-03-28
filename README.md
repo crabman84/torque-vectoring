@@ -23,7 +23,7 @@ After all you have finished  an amount of code your are certain is functioning a
 #### 2. 'git commit -m " my message that describes what has been changed/added/deleted" ' 
      2a. A custom message is essential in conveying what you have done. Doesn't have to be long only remind you what you did
 #### 3. 'git push'
-     3a. Should push your commit from the remote(local) repo to the online repo
+     3a. Should push your commit from the local repo(on your computer) to the remote repo (online in some magic server)
 
 ## What is a Merge Conflict?
 
