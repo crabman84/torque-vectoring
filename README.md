@@ -1,5 +1,5 @@
 # torque-vectoring
-For the 2020 SEPA group working on torque vectoring control system and dashboard using a microcontroller.
+For the 2020 SEPA group working on torque vectoring control system and dashboard using a microcontroller!
 
 ## Git Conventions: 
 
