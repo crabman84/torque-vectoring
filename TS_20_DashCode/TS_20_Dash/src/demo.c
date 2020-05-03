@@ -104,7 +104,7 @@ void demo_create(void)
 #endif
 
     lv_obj_t * tab1 = lv_tabview_add_tab(tv, "AndrewWasHere");
-    lv_obj_t * tab2 = lv_tabview_add_tab(tv, "List");
+    lv_obj_t * tab2 = lv_tabview_add_tab(tv, "Christian");
     lv_obj_t * tab3 = lv_tabview_add_tab(tv, "Chart");
 
 #if LV_DEMO_WALLPAPER == 0
