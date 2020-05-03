@@ -103,7 +103,7 @@ void demo_create(void)
     lv_obj_set_pos(wp, 0, -5);
 #endif
 
-    lv_obj_t * tab1 = lv_tabview_add_tab(tv, "Write");
+    lv_obj_t * tab1 = lv_tabview_add_tab(tv, "AndrewWasHere");
     lv_obj_t * tab2 = lv_tabview_add_tab(tv, "List");
     lv_obj_t * tab3 = lv_tabview_add_tab(tv, "Chart");
 
