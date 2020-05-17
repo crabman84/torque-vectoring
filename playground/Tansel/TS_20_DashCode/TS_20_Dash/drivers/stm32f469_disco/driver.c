@@ -1,13 +1,4 @@
-
-#include "stm32f4xx.h"
-#include "stm32f469i_discovery.h"
-#include "tft/tft.h"
-#include "touchpad/touchpad.h"
-#include "system_stm32f4xx.h"
-#include "stm32f4xx_hal_gpio.h"
-#include "stm32f4xx_hal_rcc.h"
-#include <string.h>
-
+#include "driver.h"
 
 /**
   * @brief  System Clock Configuration
@@ -34,14 +25,9 @@
   * @retval None
   */
 
-// Digital output typedef used by LEDs and other digital outputs.      
-typedef struct {
-  GPIO_TypeDef* GPIO_Port;
-  uint16_t GPIO_Pin;
-  GPIO_InitTypeDef GPIO_InitSt;
-} digitalOutput;
+// LEDs used by the disco backboard.
+GPIO_Struct PDOC_led, AMS_led, IMD_led, BSPD_led, multi1_led, multi2_led, multi3_led, multi4_led;
 
-digitalOutput PDOC_led, AMS_led, IMD_led, BSPD_led, multi1_led, multi2_led, multi3_led, multi4_led;
 
 // LED Array controls used by the LED array at the top of the board.
 const int LED_ARRAY_DIRECTIONS[12][4] = {
@@ -73,10 +59,13 @@ const bool LED_ARRAY_OUTPUTS[12][4] = {
 	{false,false,true,false}
 };
 
-
-// Initialise structure used by required digital output.
-GPIO_InitTypeDef GPIO_InitStruct;
-
+/*
+* stm32cube Framework System Clock Configuration.
+* Param:
+*   None.
+* Usage:
+*   Called when hardware is being initiated.
+*/
 static void SystemClock_Config(void)
 {
     RCC_ClkInitTypeDef RCC_ClkInitStruct;
@@ -129,151 +118,23 @@ static void SystemClock_Config(void)
 }
 
 
-
-// First initalisation of the board's LEDs.
-static void led_init(void)
-{
-  // Initiate LED GPIOs.
-  __GPIOA_CLK_ENABLE();
-  __GPIOB_CLK_ENABLE();
-  __GPIOG_CLK_ENABLE();
-  __GPIOH_CLK_ENABLE();
-  
-
-  // Assign pin and port to LEDs
-  PDOC_led.GPIO_Port = GPIOA;
-  PDOC_led.GPIO_Pin = GPIO_PIN_1;
-
-  AMS_led.GPIO_Port = GPIOG;
-  AMS_led.GPIO_Pin = GPIO_PIN_13;
-
-  IMD_led.GPIO_Port = GPIOG;
-  IMD_led.GPIO_Pin = GPIO_PIN_14;
-
-  BSPD_led.GPIO_Port = GPIOG;
-  BSPD_led.GPIO_Pin = GPIO_PIN_9;
-
-  // LED array configuration.
-  multi1_led.GPIO_Port = GPIOB;
-  multi1_led.GPIO_Pin = GPIO_PIN_14;
-
-  multi2_led.GPIO_Port = GPIOB;
-  multi2_led.GPIO_Pin = GPIO_PIN_15;
-
-  multi3_led.GPIO_Port = GPIOH;
-  multi3_led.GPIO_Pin = GPIO_PIN_6;
-
-  multi4_led.GPIO_Port = GPIOA;
-  multi4_led.GPIO_Pin = GPIO_PIN_7;
-
-  // Configure the LED outputs.
-  // This first initialisation needs to occur for all others to work.
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-  // -----------------------------------
-
-  // Configure initialisations for LEDs
-  AMS_led.GPIO_InitSt.Pin = AMS_led.GPIO_Pin;
-  AMS_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  AMS_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  AMS_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(AMS_led.GPIO_Port, &AMS_led.GPIO_InitSt);
-
-  PDOC_led.GPIO_InitSt.Pin = PDOC_led.GPIO_Pin;
-  PDOC_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  PDOC_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  PDOC_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(PDOC_led.GPIO_Port, &PDOC_led.GPIO_InitSt);
-
-  IMD_led.GPIO_InitSt.Pin = IMD_led.GPIO_Pin;
-  IMD_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  IMD_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  IMD_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(IMD_led.GPIO_Port, &IMD_led.GPIO_InitSt);
-
-  BSPD_led.GPIO_InitSt.Pin = BSPD_led.GPIO_Pin;
-  BSPD_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  BSPD_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  BSPD_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(BSPD_led.GPIO_Port, &BSPD_led.GPIO_InitSt);
-  
-  multi1_led.GPIO_InitSt.Pin = multi1_led.GPIO_Pin;
-  multi1_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  multi1_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  multi1_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(multi1_led.GPIO_Port, &multi1_led.GPIO_InitSt);
-
-  multi2_led.GPIO_InitSt.Pin = multi2_led.GPIO_Pin;
-  multi2_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  multi2_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  multi2_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(multi2_led.GPIO_Port, &multi2_led.GPIO_InitSt);
-
-  multi3_led.GPIO_InitSt.Pin = multi3_led.GPIO_Pin;
-  multi3_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  multi3_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  multi3_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(multi3_led.GPIO_Port, &multi3_led.GPIO_InitSt);
-
-  multi4_led.GPIO_InitSt.Pin = multi4_led.GPIO_Pin;
-  multi4_led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-  multi4_led.GPIO_InitSt.Pull = GPIO_PULLUP;
-  multi4_led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-  HAL_GPIO_Init(multi4_led.GPIO_Port, &multi4_led.GPIO_InitSt);
-  
-
-  // This output needs to be set to high for all outputs to work.
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET);
-}
-
-
 /*
-* Basic LED & GPIO control procedure.
+* Disco Backboard LED initialisation.
 * Param:
-*   digitalOutput led, used to select output GPIO and pin before setting a state (currently only used for LEDs, hence the name).
-*   bool state, used to turn and led on/true or off/false.
+*   None.
 * Usage:
-*   Used to either turn a digital output on or off, e.g.
-*   led_control(BSP_led, true) // To turn on the BSP led.
+*   Called when hardware is being initiated.
 */
-static void led_control(digitalOutput led, bool state)
+static void led_init()
 {
-  if (state) {
-    HAL_GPIO_WritePin(led.GPIO_Port, led.GPIO_Pin, GPIO_PIN_SET);
-  } else {
-    HAL_GPIO_WritePin(led.GPIO_Port, led.GPIO_Pin, GPIO_PIN_RESET);
-  }
-        
-      
-}
-
-/*
-* Setting LED and GPIO direction.
-* Param:
-*   digitalOutput led, used to change configurations.
-*   bool direction, used to turn determine a direction (true/output, false/input).
-* Usage:
-*   Used by led_array_control() as certain GPIOs need to be set to inputs for other outputs to work.
-*/
-static void led_direction(digitalOutput led, bool direction) {
-  if (direction) {
-    HAL_GPIO_DeInit(led.GPIO_Port, led.GPIO_Pin);
-    led.GPIO_InitSt.Pin = led.GPIO_Pin;
-    led.GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
-    led.GPIO_InitSt.Pull = GPIO_PULLUP;
-    led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-    HAL_GPIO_Init(led.GPIO_Port, &led.GPIO_InitSt);
-  } else {
-    HAL_GPIO_DeInit(led.GPIO_Port, led.GPIO_Pin);
-    led.GPIO_InitSt.Pin = led.GPIO_Pin;
-    led.GPIO_InitSt.Mode = GPIO_MODE_INPUT;
-    led.GPIO_InitSt.Pull = GPIO_NOPULL;
-    led.GPIO_InitSt.Speed = GPIO_SPEED_HIGH;
-    HAL_GPIO_Init(led.GPIO_Port, &led.GPIO_InitSt);
-  }
+  gpio_pin_init(&AMS_led, 'G', 13, true);
+  gpio_pin_init(&PDOC_led, 'A', 1, true);
+  gpio_pin_init(&IMD_led, 'G', 14, true);
+  gpio_pin_init(&BSPD_led, 'G', 9, true);
+  gpio_pin_init(&multi1_led, 'B', 14, true);
+  gpio_pin_init(&multi2_led, 'B', 15, true);
+  gpio_pin_init(&multi3_led, 'H', 6, true);
+  gpio_pin_init(&multi4_led, 'A', 7, true);
 }
 
 /*
@@ -295,43 +156,48 @@ static void led_direction(digitalOutput led, bool direction) {
 static void led_array_control(int LED_Select) {
   if(LED_ARRAY_DIRECTIONS[LED_Select][0] == 1)
 	{
-    led_direction(multi1_led,true);
-    led_control(multi1_led,LED_ARRAY_OUTPUTS[LED_Select][0]);
+    gpio_direction(&multi1_led,true);
+    gpio_state(&multi1_led,LED_ARRAY_OUTPUTS[LED_Select][0]);
 	}else
 	{
-		led_direction(multi1_led,false);
+		gpio_direction(&multi1_led,false);
 	}
 	if(LED_ARRAY_DIRECTIONS[LED_Select][1] == 1)
 	{
-    led_direction(multi2_led,true);
-    led_control(multi2_led,LED_ARRAY_OUTPUTS[LED_Select][1]);
+    gpio_direction(&multi2_led,true);
+    gpio_state(&multi2_led,LED_ARRAY_OUTPUTS[LED_Select][1]);
 	}else
 	{
-    led_direction(multi2_led,false);
+    gpio_direction(&multi2_led,false);
 	}
 	if(LED_ARRAY_DIRECTIONS[LED_Select][2] == 1)
 	{
-		led_direction(multi3_led,true);
-    led_control(multi3_led,LED_ARRAY_OUTPUTS[LED_Select][2]);
+		gpio_direction(&multi3_led,true);
+    gpio_state(&multi3_led,LED_ARRAY_OUTPUTS[LED_Select][2]);
 	}else
 	{
-		led_direction(multi3_led,false);
+		gpio_direction(&multi3_led,false);
 	}
 	if(LED_ARRAY_DIRECTIONS[LED_Select][3] == 1)
 	{
-		led_direction(multi4_led,true);
-    led_control(multi4_led,LED_ARRAY_OUTPUTS[LED_Select][3]);
+		gpio_direction(&multi4_led,true);
+    gpio_state(&multi4_led,LED_ARRAY_OUTPUTS[LED_Select][3]);
 	}else
 	{
-		led_direction(multi4_led,false);
+		gpio_direction(&multi4_led,false);
 	}
 }
 
-
-
-
+/*
+* stm32cube Framework Hardware Initation.
+* Param:
+*   None.
+* Usage:
+*   Called by the main file to initiate hardware.
+*/
 void hw_init(void)
 {
+    // Default HAL library initiation.
     HAL_Init();
 
   	/* Configure the system clock to 180 MHz */
@@ -345,37 +211,45 @@ void hw_init(void)
   		HAL_Delay(50);
   	}
 
+    // Initiate program specific drivers/libraries.
   	tft_init();
   	touchpad_init();
+    gpio_init();
     led_init();
 }
 
-
+/*
+* stm32cube Framework Hardware Loop.
+* Param:
+*   None.
+* Usage:
+*   Called by the main file to begin hardware infinite loop.
+*/
 void hw_loop(void)
 {
     while(1) {
-        led_control(PDOC_led,false);
-        led_control(AMS_led,false);
-        led_control(IMD_led,false);
-        led_control(BSPD_led,false);
+        gpio_state(&PDOC_led,false);
+        gpio_state(&AMS_led,false);
+        gpio_state(&IMD_led,false);
+        gpio_state(&BSPD_led,false);
         HAL_Delay(5);
     		lv_task_handler();
         for (int i = 0; i < 12; i++) {
           led_array_control(i);
           if (i < 4) {
-            led_control(PDOC_led,true);
+            gpio_state(&PDOC_led,true);
           }
 
           if ((i < 8) && (i > 4)) {
-            led_control(AMS_led,true); 
+            gpio_state(&AMS_led,true); 
           }
           
           if ((i < 12) && (i > 8)) {
-            led_control(IMD_led,true);
+            gpio_state(&IMD_led,true);
           }
           HAL_Delay(100);
         }
-        led_control(BSPD_led,true);
+        gpio_state(&BSPD_led,true);
         HAL_Delay(500);
     }
 }
