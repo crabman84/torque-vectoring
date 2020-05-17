@@ -25,6 +25,14 @@
   * @retval None
   */
 
+// CAN Variables
+CAN_HandleTypeDef CanHandle;
+CAN_TxHeaderTypeDef TxHeader;
+CAN_RxHeaderTypeDef RxHeader;
+uint8_t TxData[8];
+uint8_t RxData[8];
+uint32_t TxMailbox;
+
 // LEDs used by the disco backboard.
 GPIO_Struct PDOC_led, AMS_led, IMD_led, BSPD_led, multi1_led, multi2_led, multi3_led, multi4_led;
 
@@ -188,6 +196,78 @@ static void led_array_control(int LED_Select) {
 	}
 }
 
+
+static void Error_Handler()
+{
+  while (1)
+  {
+  }
+}
+
+static void can_init() {
+  // Configure CAN 1 peripheral.
+  CAN_FilterTypeDef sFilterConfig;
+  CanHandle.Instance = CAN1;
+  CanHandle.Init.TimeTriggeredMode = DISABLE;
+  CanHandle.Init.AutoBusOff = DISABLE;
+  CanHandle.Init.AutoWakeUp = DISABLE;
+  CanHandle.Init.AutoRetransmission = ENABLE;
+  CanHandle.Init.ReceiveFifoLocked = DISABLE;
+  CanHandle.Init.TransmitFifoPriority = DISABLE;
+  CanHandle.Init.Mode = CAN_MODE_NORMAL;
+  CanHandle.Init.SyncJumpWidth = CAN_SJW_1TQ;
+  CanHandle.Init.TimeSeg1 = CAN_BS1_4TQ;
+  CanHandle.Init.TimeSeg2 = CAN_BS2_2TQ;
+  CanHandle.Init.Prescaler = 6;
+  /*
+  if (HAL_CAN_Init(&CanHandle) != HAL_OK)
+  {
+    // Initialization Error 
+    Error_Handler();
+  }
+  
+  // Configure CAN Filter.
+  sFilterConfig.FilterBank = 0;
+  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
+  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
+  sFilterConfig.FilterIdHigh = 0x0000;
+  sFilterConfig.FilterIdLow = 0x0000;
+  sFilterConfig.FilterMaskIdHigh = 0x0000;
+  sFilterConfig.FilterMaskIdLow = 0x0000;
+  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
+  sFilterConfig.FilterActivation = ENABLE;
+  sFilterConfig.SlaveStartFilterBank = 14;
+  
+  if (HAL_CAN_ConfigFilter(&CanHandle, &sFilterConfig) != HAL_OK)
+  {
+    // Filter configuration Error 
+    Error_Handler();
+  }
+  
+  // Start the CAN peripheral
+  if (HAL_CAN_Start(&CanHandle) != HAL_OK)
+  {
+    // Start Error 
+    Error_Handler();
+  }
+  
+  // Activate CAN RX notification
+  if (HAL_CAN_ActivateNotification(&CanHandle, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK)
+  {
+    // Notification Error 
+    Error_Handler();
+  }
+  
+  // Configure the transmission process.
+  TxHeader.StdId = 0x321;
+  TxHeader.ExtId = 0x01;
+  TxHeader.RTR = CAN_RTR_DATA;
+  TxHeader.IDE = CAN_ID_STD;
+  TxHeader.DLC = 2;
+  TxHeader.TransmitGlobalTime = DISABLE;
+  */
+}
+
 /*
 * stm32cube Framework Hardware Initation.
 * Param:
@@ -204,11 +284,19 @@ void hw_init(void)
   	SystemClock_Config();
 
   	/*Start up indication*/
-  	BSP_LED_Init(LED3);
-  	uint8_t i;
-  	for (i = 0; i < 8; i++) {
-  		BSP_LED_Toggle(LED3);
-  		HAL_Delay(50);
+  	BSP_LED_Init(LED1);
+    BSP_LED_Init(LED2);
+    BSP_LED_Init(LED3);
+    BSP_LED_Init(LED4);
+  	for (int i = 0; i < 8; i++) {
+  		BSP_LED_Toggle(LED1);
+  		HAL_Delay(25);
+      BSP_LED_Toggle(LED2);
+      HAL_Delay(25);
+      BSP_LED_Toggle(LED3);
+      HAL_Delay(25);
+      BSP_LED_Toggle(LED4);
+      HAL_Delay(25);
   	}
 
     // Initiate program specific drivers/libraries.
@@ -216,6 +304,9 @@ void hw_init(void)
   	touchpad_init();
     gpio_init();
     led_init();
+    can_init();
+
+
 }
 
 /*
@@ -228,13 +319,13 @@ void hw_init(void)
 void hw_loop(void)
 {
     while(1) {
-        gpio_state(&PDOC_led,false);
+        /*gpio_state(&PDOC_led,false);
         gpio_state(&AMS_led,false);
         gpio_state(&IMD_led,false);
-        gpio_state(&BSPD_led,false);
+        gpio_state(&BSPD_led,false);*/
         HAL_Delay(5);
     		lv_task_handler();
-        for (int i = 0; i < 12; i++) {
+       /* for (int i = 0; i < 12; i++) {
           led_array_control(i);
           if (i < 4) {
             gpio_state(&PDOC_led,true);
@@ -248,8 +339,8 @@ void hw_loop(void)
             gpio_state(&IMD_led,true);
           }
           HAL_Delay(100);
-        }
+        }*/
         gpio_state(&BSPD_led,true);
-        HAL_Delay(500);
+        //HAL_Delay(500);
     }
 }
