@@ -46,8 +46,8 @@ static lv_style_t style_kb_rel;
 static lv_style_t style_kb_pr;
 
 #if LV_DEMO_WALLPAPER
-LV_IMG_DECLARE(img_bubble_pattern)
-//LV_IMG_DECLARE(christian_yeet)
+//LV_IMG_DECLARE(img_bubble_pattern)
+LV_IMG_DECLARE(christian_yeet)
 #endif
 
 /**********************
@@ -68,7 +68,7 @@ void demo_create(void)
 
 #if LV_DEMO_WALLPAPER
     lv_obj_t * wp = lv_img_create(lv_disp_get_scr_act(NULL), NULL);
-    lv_img_set_src(wp, &img_bubble_pattern);
+    lv_img_set_src(wp, &christian_yeet);
     //lv_img_set_src(wp, &christian_yeet);
     lv_obj_set_width(wp, hres * 4);
     lv_obj_set_protect(wp, LV_PROTECT_POS);
