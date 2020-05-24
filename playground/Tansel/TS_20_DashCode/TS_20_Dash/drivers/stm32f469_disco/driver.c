@@ -319,13 +319,14 @@ void hw_init(void)
 void hw_loop(void)
 {
     while(1) {
-        gpio_state(&PDOC_led,false);
+       /* gpio_state(&PDOC_led,false);
         gpio_state(&AMS_led,false);
         gpio_state(&IMD_led,false);
         gpio_state(&BSPD_led,false);
+        */
         HAL_Delay(5);
     		lv_task_handler();
-        for (int i = 0; i < 12; i++) {
+       /* for (int i = 0; i < 12; i++) {
           led_array_control(i);
           if (i < 4) {
             gpio_state(&PDOC_led,true);
@@ -341,6 +342,6 @@ void hw_loop(void)
           HAL_Delay(100);
         }
         gpio_state(&BSPD_led,true);
-        HAL_Delay(500);
+        HAL_Delay(500);*/
     }
 }
