@@ -17,8 +17,6 @@
 #include "driver.h"
 
 #include "lv_test_theme_1.h"
-#include "lv_test_theme_2.h"
-
 
 static void hal_init(void);
 static int tick_thread(void *data);
@@ -29,8 +27,7 @@ int main(void)
 
 	hw_init();
 
-  //lv_test_theme_1(lv_theme_night_init(63488, NULL));
-  lv_test_theme_2();
+  lv_test_theme_1(lv_theme_night_init(63488, NULL));
   
 	hw_loop();
 }

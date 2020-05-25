@@ -48,8 +48,5 @@ void lv_test_theme_1(lv_theme_t *th);
 
 #endif /*LV_USE_TESTS*/
 
-#ifdef __cplusplus
-} /* extern "C" */
-#endif
 
 #endif /*LV_TEST_THEME_H*/
