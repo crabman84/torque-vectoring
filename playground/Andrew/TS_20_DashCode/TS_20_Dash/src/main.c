@@ -9,11 +9,17 @@
 */
 
 
+
+#include <stdlib.h>
+#include <unistd.h>
+
 #include "lvgl.h"
 #include "driver.h"
 
-#include "demo.h"
+#include "lv_test_theme_1.h"
 
+static void hal_init(void);
+static int tick_thread(void *data);
 
 int main(void)
 {
@@ -21,7 +27,7 @@ int main(void)
 
 	hw_init();
 
-	demo_create();
-
+  lv_test_theme_1(lv_theme_night_init(63488, NULL));
+  
 	hw_loop();
 }
