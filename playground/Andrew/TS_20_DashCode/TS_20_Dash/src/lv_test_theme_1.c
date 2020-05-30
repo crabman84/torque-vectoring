@@ -67,11 +67,15 @@ static void header_create(lv_obj_t * parent) //uses h as its parent.
     lv_obj_align(header,parent,LV_ALIGN_CENTER,0,0);
 
     lv_obj_t * sym = lv_label_create(header, NULL);
-    lv_label_set_text(sym, LV_SYMBOL_GPS LV_SYMBOL_WIFI LV_SYMBOL_BLUETOOTH LV_SYMBOL_VOLUME_MAX);
+    lv_label_set_text(sym, "TS 20");
     lv_obj_align(sym, NULL, LV_ALIGN_IN_RIGHT_MID, -LV_DPI/10, 0);
 
+    lv_obj_t * ams_state = lv_label_create(header, NULL);
+    lv_label_set_text(ams_state, "AMS STATE: Idle");
+    lv_obj_align(ams_state, NULL, LV_ALIGN_CENTER, LV_DPI/10, 0);
+
     lv_obj_t * clock = lv_label_create(header, NULL);
-    lv_label_set_text(clock, "AMS: Idle");
+    lv_label_set_text(clock, "RUN TIME: 0");
     lv_obj_align(clock, NULL, LV_ALIGN_IN_LEFT_MID, LV_DPI/10, 0);
 
     lv_cont_set_fit2(header, LV_FIT_NONE, LV_FIT_TIGHT);   /*Let the height set automatically*/
@@ -113,6 +117,7 @@ static void create_tab1(lv_obj_t * parent, lv_obj_t * header)
 
     /* Call the header create function, using h as its parent. */
     header_create(h);
+    //lv_obj_align(h, );
 
     lv_obj_t * label1 = lv_label_create(h,NULL);
     lv_label_set_text(label1,"Motor Temp        ");
