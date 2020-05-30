@@ -23,6 +23,7 @@
  *  STATIC PROTOTYPES
  **********************/
 static void create_tab1(lv_obj_t * parent,lv_obj_t * header);
+static void create_tab2(lv_obj_t * parent);
 static void bar_set_value(lv_obj_t * bar, int16_t value);
 static void header_create(lv_obj_t * parent);
 static void bar_event_cb(lv_obj_t * slider, lv_event_t event);
@@ -54,10 +55,12 @@ void lv_test_theme_1(lv_theme_t * th)
     lv_obj_t * tv = lv_tabview_create(scr, NULL); //allows us to add tabs in more easily later.
     //lv_obj_set_size(tv, lv_disp_get_hor_res(NULL), lv_disp_get_ver_res(NULL));
     lv_obj_t * tab1 = lv_tabview_add_tab(tv, "Home Screen"); //tab1.
+    lv_obj_t * tab2 = lv_tabview_add_tab(tv,"Tab2");
 
-    lv_tabview_set_btns_hidden(tv, true); //hides the tab buttons, but allows us to implement them later on.
+    lv_tabview_set_btns_hidden(tv, false); //hides the tab buttons, but allows us to implement them later on.
 
     create_tab1(tab1,header);
+    create_tab2(tab2);
 }
 
 static void header_create(lv_obj_t * parent) //uses h as its parent.
@@ -79,7 +82,6 @@ static void header_create(lv_obj_t * parent) //uses h as its parent.
     lv_obj_align(clock, NULL, LV_ALIGN_IN_LEFT_MID, LV_DPI/10, 0);
 
     lv_cont_set_fit2(header, LV_FIT_NONE, LV_FIT_TIGHT);   /*Let the height set automatically*/
-    //lv_obj_set_pos(header, -10, 0);
 
 }
 
@@ -113,7 +115,7 @@ static void create_tab1(lv_obj_t * parent, lv_obj_t * header)
      * When creating a new widget, if we use h as the parent
      * they will all align nicely, and then we can fine tune
      * using the align functionality of lvgl.
-     * *****************************************************/
+     *******************************************************/
 
     /* Call the header create function, using h as its parent. */
     header_create(h);
@@ -173,6 +175,11 @@ static void create_tab1(lv_obj_t * parent, lv_obj_t * header)
     a.repeat = 1;
     a.repeat_pause = 100;
     lv_anim_create(&a); */
+
+}
+
+static void create_tab2(lv_obj_t * parent)
+{
 
 }
 
