@@ -574,6 +574,7 @@ void Setup() {
 int main() {
     Setup();
     while(1) {
+
 		Check_Percentages();
         Update_Display();
         

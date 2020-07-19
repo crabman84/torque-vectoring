@@ -17,7 +17,9 @@ void gpio_init() {
     __GPIOB_CLK_ENABLE();
     __GPIOG_CLK_ENABLE();
     __GPIOH_CLK_ENABLE();
+    
 
+    /*
     // Initialise structure used by required digital output.
     GPIO_InitTypeDef GPIO_InitStruct;
 
@@ -30,12 +32,15 @@ void gpio_init() {
 
     // This output needs to be set to high for all outputs to work.
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET);
+    */
+
+   
 }
 
 /*
 * GPIO Pin Initiation.
 * Param:
-*   GPIO_Struct *gpio_object, pointer to a certain GPIO object which is going to be overwritten within this initation function.
+*   GPIO_Struct *gpio_object, pointer to a certain GPIO object which is going to be overwritten within this initiation function.
 *   char gpioPort, the GPIO port that the pin is used in. Currently only A, B, G & H are used.
 *   bool direction, whether the pin is going to be an output/true or an input/false.
 * Usage:
