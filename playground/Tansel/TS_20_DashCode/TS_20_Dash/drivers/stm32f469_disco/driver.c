@@ -26,11 +26,11 @@
   */
 
 // CAN Variables
-CAN_InitTypeDef hcan2Init;
+CAN_HandleTypeDef hcan1;
 CAN_HandleTypeDef hcan2;
 CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
-CAN_FilterTypeDef sFilterConfig;
+CAN_FilterTypeDef sFilterConfig1, sFilterConfig2;
 uint32_t TxMailbox0, TxMailbox1, TxMailbox2;
 uint8_t TxData[8];
 uint8_t RxData[8];
@@ -201,35 +201,41 @@ static void led_array_control(int LED_Select) {
 }
 
 static void can_init() {
-  // Note that the touchscreen disables the use of CAN1, hence we must use CAN2.
+  /* NOTE:
+  * The touchscreen disables the use of CAN1, hence we must use CAN2.
+  * CAN1 is considered the MASTER on the board and defines configurations for other CANS, i.e. CAN2,
+  * and so, we must enable it as well.
+  */
 
-  // Enable CAN2 Clock.
+  // Enable CAN1 & CAN2 Clock.
+  __CAN1_CLK_ENABLE();
   __CAN2_CLK_ENABLE();
 
-  // Rx Pin is B5, Tx Pin is B13.
-  // Defining and enabling Rx pin.
-  GPIO_InitTypeDef GPIO_InitStruct_Rx;
-  GPIO_InitStruct_Rx.Pin = GPIO_PIN_5;
-  GPIO_InitStruct_Rx.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct_Rx.Pull = GPIO_PULLUP;
-  GPIO_InitStruct_Rx.Speed = GPIO_SPEED_FAST;
-  GPIO_InitStruct_Rx.Alternate = GPIO_AF9_CAN2;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct_Rx);
+  // CAN2 GPIO DEFINITIONS: Rx Pin is B5, Tx Pin is B13.
+  // Defining and enabling CAN2 Rx pin.
+  GPIO_InitTypeDef GPIO_InitStruct_Rx2;
+  GPIO_InitStruct_Rx2.Pin = GPIO_PIN_5;
+  GPIO_InitStruct_Rx2.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct_Rx2.Pull = GPIO_NOPULL;
+  GPIO_InitStruct_Rx2.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct_Rx2.Alternate = GPIO_AF9_CAN2;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct_Rx2);
 
-  // Defining and enabling Tx pin.
-  GPIO_InitTypeDef GPIO_InitStruct_Tx;
-  GPIO_InitStruct_Tx.Pin = GPIO_PIN_13;
-  GPIO_InitStruct_Tx.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct_Tx.Pull = GPIO_NOPULL;
-  GPIO_InitStruct_Tx.Speed = GPIO_SPEED_FAST;
-  GPIO_InitStruct_Tx.Alternate = GPIO_AF9_CAN2;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct_Tx);
+  // Defining and enabling CAN2 Tx pin.
+  GPIO_InitTypeDef GPIO_InitStruct_Tx2;
+  GPIO_InitStruct_Tx2.Pin = GPIO_PIN_13;
+  GPIO_InitStruct_Tx2.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct_Tx2.Pull = GPIO_NOPULL;
+  GPIO_InitStruct_Tx2.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct_Tx2.Alternate = GPIO_AF9_CAN2;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct_Tx2);
 
-
-
+  HAL_NVIC_SetPriority(CAN2_RX0_IRQn, 1, 0);
+  HAL_NVIC_EnableIRQ(CAN2_RX0_IRQn);
+ 
   // Setting up CAN2 configuration.
   hcan2.Instance = CAN2;
-  hcan2.Init.Prescaler = 3;
+  hcan2.Init.Prescaler = 11;
   hcan2.Init.Mode = CAN_MODE_NORMAL;
   hcan2.Init.SyncJumpWidth = CAN_SJW_4TQ;
   hcan2.Init.TimeSeg1 = CAN_BS1_11TQ;
@@ -240,81 +246,93 @@ static void can_init() {
   hcan2.Init.AutoRetransmission = DISABLE;
   hcan2.Init.ReceiveFifoLocked = DISABLE;
   hcan2.Init.TransmitFifoPriority = DISABLE;
+
+  // Configure the CAN filter (No effect in our case).
+  sFilterConfig1.FilterMode = CAN_FILTERMODE_IDMASK;
+  sFilterConfig1.FilterScale = CAN_FILTERSCALE_32BIT;
+  sFilterConfig1.FilterIdHigh = 0x0000;
+  sFilterConfig1.FilterIdLow = 0x0000;
+  sFilterConfig1.FilterMaskIdHigh = 0x0000;
+  sFilterConfig1.FilterMaskIdLow = 0x0000;
+  sFilterConfig1.FilterFIFOAssignment = CAN_RX_FIFO0;
+  sFilterConfig1.FilterActivation = ENABLE;
+  sFilterConfig1.FilterBank = 14;
+  sFilterConfig1.SlaveStartFilterBank = 14;
   
-  //Initialise CAN2.
-  if (HAL_CAN_Init(&hcan2) != HAL_OK) {
-    // Indicate onboard LED4 when CAN2 has failed to initalise.
+  //Initialise CAN.
+  if ((HAL_CAN_Init(&hcan2) == HAL_OK) ) {
+    // Indicate onboard LED4 when CAN has initalised.
     BSP_LED_On(LED4);
   } 
   
-  // Configure the CAN filter (No effect in our case).
-  sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
-  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
-  sFilterConfig.FilterIdHigh = 0x0000;
-  sFilterConfig.FilterIdLow = 0x0000;
-  sFilterConfig.FilterMaskIdHigh = 0x0000;
-  sFilterConfig.FilterMaskIdLow = 0x0000;
-  sFilterConfig.FilterFIFOAssignment = CAN_FILTER_FIFO0;
-  sFilterConfig.FilterActivation = ENABLE;
-  sFilterConfig.FilterBank = 0;
-  sFilterConfig.SlaveStartFilterBank = 14;
-  
-  // Initialise the CAN filter.
-  if(HAL_CAN_ConfigFilter(&hcan2, &sFilterConfig) != HAL_OK) {
-    // Indicate onboard LED when CAN2 filter has failed to initalise.
+  // Start the CAN communication and configure the filter.
+  if ((HAL_CAN_Start(&hcan2) == HAL_OK) && (HAL_CAN_ConfigFilter(&hcan2, &sFilterConfig1) == HAL_OK)) {
+    // Indicate onboard LED when CAN has started with the filter.
     BSP_LED_On(LED3);
   }
-    
-  // Start the CAN communication.
-  if(HAL_CAN_Start(&hcan2) != HAL_OK) {
-    // Indicate onboard LED when CAN2 has failed to start.
+
+  // Enable Rx notifications.
+  if ((HAL_CAN_ActivateNotification(&hcan2, CAN_IT_RX_FIFO0_MSG_PENDING) == HAL_OK)) {
+    // Indicate onboard LED when CAN notifcations have been enabled.
     BSP_LED_On(LED2);
   }
 
+  // TRANSMIT MESSAGE TEST - START
   // Define Tx Header
   TxHeader.StdId = 0x244;
   TxHeader.IDE = CAN_ID_STD;
   TxHeader.RTR = CAN_RTR_DATA;
-  TxHeader.DLC = 2;
+  TxHeader.DLC = 8;
   TxHeader.TransmitGlobalTime = DISABLE;
 
+  // Define Tx mailboxes.
   TxMailbox0 = CAN_TX_MAILBOX0;
   TxMailbox1 = CAN_TX_MAILBOX1;
   TxMailbox2 = CAN_TX_MAILBOX2;
-
+  
+  // Test transmit data.
   TxData[0] = 0;
   TxData[1] = 1;
+  TxData[2] = 1;
+  TxData[3] = 0;
+  TxData[4] = 1;
+  TxData[5] = 0;
+  TxData[6] = 0;
+  TxData[7] = 0;
   
-  
+  // Transmit the data.
+  HAL_CAN_AddTxMessage(&hcan2, &TxHeader, TxData, &TxMailbox0);
 
-  
-  HAL_StatusTypeDef txSend = HAL_CAN_AddTxMessage(&hcan2, &TxHeader, TxData, &TxMailbox0);
+  // Wait for the transmission to complete.
+  while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan2) != 3) {}
+  // TRANSMIT MESSAGE TEST - END
 
-  switch(txSend) {
-    case HAL_ERROR:
-      led_array_control(4);
-      break;
-    case HAL_BUSY:
-      led_array_control(5);
-      break;
-    case HAL_TIMEOUT:
-      led_array_control(6);
-      break;
-    case HAL_OK:
-      led_array_control(7);
-      break;
+}
+
+// CAN 2 Rx Interrupt Handle Redirection.
+void CAN2_RX0_IRQHandler(void) { 
+  HAL_CAN_IRQHandler(&hcan2);
+}
+
+// CAN Rx Interrupt Callback function.
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+  gpio_state(&BSPD_led, true);
+  gpio_state(&BSPD_led, false);
+
+  /* Get RX message */
+  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {
+    /* Reception Error */
+    //Error_Handler();
   }
 
-  if (HAL_CAN_IsTxMessagePending(&hcan2, TxMailbox0) == 0U) {
-    gpio_state(&PDOC_led, true); // No pending transmission
-  } else {
-    gpio_state(&AMS_led, true);
+  /* Display LEDx */
+  if (RxHeader.StdId == 0x250) {
+    gpio_state(&IMD_led, true);
   }
 
-  
-
-  
-  
+  if (RxHeader.StdId == 0x251) {
+    gpio_state(&IMD_led, false);
+  }
 }
 
 /*
@@ -329,7 +347,7 @@ void hw_init(void)
     // Default HAL library initiation.
     HAL_Init();
 
-  	/* Configure the system clock to 180 MHz */
+  	// Configure the system clock 
   	SystemClock_Config();
 
   	/*Start up indication*/
@@ -347,7 +365,11 @@ void hw_init(void)
       BSP_LED_Toggle(LED4);
       HAL_Delay(25);
   	}
-
+    BSP_LED_Off(LED1);
+    BSP_LED_Off(LED2);
+    BSP_LED_Off(LED3);
+    BSP_LED_Off(LED4);
+    
     // Initiate program specific drivers/libraries.
   	tft_init();
   	touchpad_init();
@@ -366,6 +388,31 @@ void hw_init(void)
 void hw_loop(void) {
   while(1) {
     lv_task_handler();
+    led_array_control(3);
+
+    /*HAL_StatusTypeDef RxMessageState = (HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &RxHeader, RxData));
+    switch (RxMessageState) {
+      case HAL_OK:
+        led_array_control(0);
+        break;
+      case HAL_ERROR:
+        led_array_control(4);
+        break;
+      case HAL_BUSY:
+        led_array_control(8);
+        break;
+      case HAL_TIMEOUT:
+        led_array_control(11);
+        break;
+    }*/
+    /*if (HAL_CAN_GetRxFifoFillLevel(&hcan2, CAN_RX_FIFO0)) {
+      HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO0, &RxHeader, RxData);
+      if (RxData[0] == 1) {
+        gpio_state(&BSPD_led, false);
+      } else {
+        gpio_state(&BSPD_led, true);
+      }
+    }*/
     HAL_Delay(10);
   }
 }
