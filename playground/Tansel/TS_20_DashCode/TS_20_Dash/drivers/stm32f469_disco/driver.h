@@ -14,6 +14,7 @@ extern "C" {
 #include "stm32f4xx_hal_rcc.h"
 #include "stm32f4xx_hal_can.h"
 #include "gpio.h"
+#include <math.h>
 
 void hw_init(void);
 void hw_loop(void);

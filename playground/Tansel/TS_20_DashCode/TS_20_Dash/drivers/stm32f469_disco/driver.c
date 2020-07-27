@@ -1,29 +1,50 @@
 #include "driver.h"
 
-/**
-  * @brief  System Clock Configuration
-  *         The system Clock is configured as follow :
-  *            System Clock source            = PLL (HSE)
-  *            SYSCLK(Hz)                     = 180000000
-  *            HCLK(Hz)                       = 180000000
-  *            AHB Prescaler                  = 1
-  *            APB1 Prescaler                 = 4
-  *            APB2 Prescaler                 = 2
-  *            HSE Frequency(Hz)              = 8000000
-  *            PLL_M                          = 8
-  *            PLL_N                          = 360
-  *            PLL_P                          = 2
-  *            PLL_Q                          = 7
-  *            VDD(V)                         = 3.3
-  *            Main regulator output voltage  = Scale1 mode
-  *            Flash Latency(WS)              = 5
-  *         The LTDC Clock is configured as follow :
-  *            PLLSAIN                        = 192
-  *            PLLSAIR                        = 4
-  *            PLLSAIDivR                     = 8
-  * @param  None
-  * @retval None
-  */
+// Constants
+#define VOLT_MIN            380
+#define VOLT_MAX            592
+#define ACC_TEMP_MIN				0
+#define ACC_TEMP_MAX				80
+#define	RINEHEART_TEMP_MIN	0
+#define	RINEHEART_TEMP_MAX	80
+#define	MOTOR_TEMP_MIN			0
+#define	MOTOR_TEMP_MAX			80
+#define MOTOR_SPEED_MIN			0
+#define MOTOR_SPEED_MAX			6000
+
+// CAN IDs
+//AMS
+#define AMS_HEARTBEAT_ID  0x300 // Not Used.
+#define AMS_DATA_ID       0x301
+
+//Throttle
+#define THROTTLE_HEARTBEAT_ID 0x304 // Not Used.
+#define THROTTLE_SENSORS_ID   0x305 // Not Used.
+#define THROTTLE_OUTPUT_ID    0x306
+#define THROTTLE_ERRORS_ID    0x307
+
+//Brake
+#define BRAKE_SAFETY_ID 0x30A
+
+//Temp Sensor
+#define TEMP_SUMMARY_ID 0x311
+
+//Dash
+#define DASH_HEARTBEAT_ID 0x320
+
+//Discharge
+#define DISCHARGE_DATA_ID 0x340
+
+//Orion
+#define ORION_DATA_ID     0x20B	 		//orion battery data message
+#define ORION_CURRENT_ID  0x70B			//orion current // Not Used.
+
+//RMS
+#define RMS_ID                    0x200         // RMS Base address
+#define RMS_TEMPERATURE_SET_1     RMS_ID + 0xA0 // Not Used.
+#define RMS_TEMPERATURE_SET_2     RMS_ID + 0xA1
+#define RMS_TEMPERATURE_SET_3     RMS_ID + 0xA2
+#define RMS_MOTOR_POSITION_INFO   RMS_ID + 0xA5
 
 // CAN Variables
 CAN_HandleTypeDef hcan1;
@@ -36,6 +57,22 @@ uint8_t TxData[8];
 uint8_t RxData[8];
 GPIO_Struct Rx_pin, Tx_pin;
 
+// Program Variables
+bool precharge_pressed = 0;
+bool drive_pressed = 0;
+bool apps_disagree = 0;
+bool trailbraking_active = 0;
+
+int ams_state = 0;
+int heartbeat_counter = 0;
+
+int16_t	motor_speed = 0;
+
+uint16_t accum_lowest_voltage = 0;
+uint16_t motor_highest_temp = 0;
+uint16_t rineheart_highest_temp = 0;
+
+float max_accum_temp = 0;
 
 // LEDs used by the disco backboard.
 GPIO_Struct PDOC_led, AMS_led, IMD_led, BSPD_led, multi1_led, multi2_led, multi3_led, multi4_led;
@@ -200,6 +237,14 @@ static void led_array_control(int LED_Select) {
 	}
 }
 
+
+/*
+* CAN Initialisation.
+* Param:
+*   None.
+* Usage:
+*   Called when hardware is being initiated.
+*/
 static void can_init() {
   /* NOTE:
   * The touchscreen disables the use of CAN1, hence we must use CAN2.
@@ -277,7 +322,7 @@ static void can_init() {
     BSP_LED_On(LED2);
   }
 
-  // TRANSMIT MESSAGE TEST - START
+  /*// TRANSMIT MESSAGE TEST - START
   // Define Tx Header
   TxHeader.StdId = 0x244;
   TxHeader.IDE = CAN_ID_STD;
@@ -305,33 +350,87 @@ static void can_init() {
 
   // Wait for the transmission to complete.
   while(HAL_CAN_GetTxMailboxesFreeLevel(&hcan2) != 3) {}
-  // TRANSMIT MESSAGE TEST - END
+  // TRANSMIT MESSAGE TEST - END */
 
 }
 
-// CAN 2 Rx Interrupt Handle Redirection.
+/*
+* HAL CAN Interrupt Redirection Procedure.
+* Param:
+*   None.
+* Usage:
+*   Automatically called when an interrupt is detected on the CAN2 Rx pin.
+*   Redirects program to the interrupt callback function.
+*/
 void CAN2_RX0_IRQHandler(void) { 
   HAL_CAN_IRQHandler(&hcan2);
 }
 
-// CAN Rx Interrupt Callback function.
+/*
+* HAL CAN Interrupt Callback Function.
+* Param:
+*   CAN_HandleTypeDef pointer, determines which CAN line is calling the interrupt.
+*   (Always CAN2 in our case)
+* Usage:
+*   Automatically called by the interrupt redirection procedure.
+*/
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-  gpio_state(&BSPD_led, true);
-  gpio_state(&BSPD_led, false);
 
-  /* Get RX message */
-  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK) {
-    /* Reception Error */
-    //Error_Handler();
-  }
+  // Get Rx message - We do not need to check if it exists as the interrupt implies that something has arrived.
+  HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
 
-  /* Display LEDx */
-  if (RxHeader.StdId == 0x250) {
-    gpio_state(&IMD_led, true);
-  }
+  // Determine how to handle the data according to its ID.
+  switch(RxHeader.StdId) {
+    case AMS_DATA_ID:
+      ams_state = RxData[0];
+      gpio_state(&AMS_led, RxData[1]);
+      gpio_state(&IMD_led, RxData[5]);
+      break;
 
-  if (RxHeader.StdId == 0x251) {
-    gpio_state(&IMD_led, false);
+    case THROTTLE_OUTPUT_ID:
+      precharge_pressed = RxData[1];
+      drive_pressed = RxData[2];
+      break;
+
+    case THROTTLE_ERRORS_ID:
+      apps_disagree = RxData[0];
+      trailbraking_active = RxData[1];
+      break;
+
+    case TEMP_SUMMARY_ID:   
+      max_accum_temp = (float)RxData[1];
+      break;
+
+    case ORION_DATA_ID: 
+      if ((heartbeat_counter > 2) && (RxHeader.DLC == 7)) {
+        accum_lowest_voltage = RxData[5] | (RxData[4] << 8);
+      }
+			break;
+
+    case RMS_TEMPERATURE_SET_2:
+      rineheart_highest_temp = RxData[0] | (RxData[1] << 8);
+      break;
+    
+    case RMS_TEMPERATURE_SET_3:
+      motor_highest_temp = RxData[4] | (RxData[5] << 8);
+			break;
+    
+    case RMS_MOTOR_POSITION_INFO:
+      motor_speed = RxData[2] | (RxData[3] << 8);
+      led_array_control(round(((motor_speed - MOTOR_SPEED_MIN) / MOTOR_SPEED_MAX) * 11));
+			break;
+    
+    case DISCHARGE_DATA_ID:
+      if(RxData[0] == 0) {
+        gpio_state(&PDOC_led, true);
+      } else {
+        gpio_state(&PDOC_led, false);
+      }
+			break;
+    
+    case BRAKE_SAFETY_ID:
+				gpio_state(&PDOC_led, RxData[4]);
+			break;
   }
 }
 
@@ -388,31 +487,6 @@ void hw_init(void)
 void hw_loop(void) {
   while(1) {
     lv_task_handler();
-    led_array_control(3);
-
-    /*HAL_StatusTypeDef RxMessageState = (HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &RxHeader, RxData));
-    switch (RxMessageState) {
-      case HAL_OK:
-        led_array_control(0);
-        break;
-      case HAL_ERROR:
-        led_array_control(4);
-        break;
-      case HAL_BUSY:
-        led_array_control(8);
-        break;
-      case HAL_TIMEOUT:
-        led_array_control(11);
-        break;
-    }*/
-    /*if (HAL_CAN_GetRxFifoFillLevel(&hcan2, CAN_RX_FIFO0)) {
-      HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO0, &RxHeader, RxData);
-      if (RxData[0] == 1) {
-        gpio_state(&BSPD_led, false);
-      } else {
-        gpio_state(&BSPD_led, true);
-      }
-    }*/
     HAL_Delay(10);
   }
 }
