@@ -10,22 +10,19 @@ extern "C" {
 
 #include "stm32f4xx.h"
 #include "stm32f469i_discovery.h"
-#include "tft/tft.h"
-#include "touchpad/touchpad.h"
 #include "system_stm32f4xx.h"
 #include "stm32f4xx_hal_gpio.h"
-#include "stm32f4xx_hal_rcc.h"
-
+#include <stdbool.h>
 
 typedef struct {
   GPIO_TypeDef* GPIO_Port;
   GPIO_InitTypeDef GPIO_InitSt;
 } GPIO_Struct;
 
-void gpio_init(void);
-void gpio_pin_init(GPIO_Struct *gpio_object, char gpioPort, int gpioPin, bool direction);
-void gpio_state(GPIO_Struct *gpio_object, bool state);
-void gpio_direction(GPIO_Struct *gpio_object, bool direction);
+void GPIO_Init(void);
+void GPIO_Pin_Init(GPIO_Struct *gpio_object, char gpioPort, int gpioPin, bool direction);
+void GPIO_State(GPIO_Struct *gpio_object, bool state);
+void GPIO_Direction(GPIO_Struct *gpio_object, bool direction);
 
 
 

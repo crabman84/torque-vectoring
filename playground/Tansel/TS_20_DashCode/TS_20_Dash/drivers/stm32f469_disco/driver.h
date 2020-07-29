@@ -10,12 +10,14 @@ extern "C" {
 #include "tft/tft.h"
 #include "touchpad/touchpad.h"
 #include "system_stm32f4xx.h"
-#include "stm32f4xx_hal_gpio.h"
-#include "stm32f4xx_hal_rcc.h"
-#include "stm32f4xx_hal_can.h"
-#include "gpio.h"
-#include <math.h>
+#include "CAN.h"
+#include "timer.h"
 
+void SystemClock_Config(void);
+void LED_Init(void);
+void LED_Array_Control(int LED_Select);
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan);
+void TIM1_UP_TIM10_IRQHandler(void);
 void hw_init(void);
 void hw_loop(void);
 

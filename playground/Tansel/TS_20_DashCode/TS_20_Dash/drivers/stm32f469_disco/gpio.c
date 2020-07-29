@@ -1,5 +1,14 @@
 /*
-*   GPIO Driver class that allows us to easily initiate GPIOs, set them and control them based on the HAL Library.
+*   Dashboard Custom GPIO Driver Used For Easy GPIO Control.
+*   
+*   PROGRAM STRUCTURE
+*   =================
+*   Functions
+*     GPIO_Init         - Enable the appropriate GPIO clocks used by our board.
+*     GPIO_Pin_Init     - Initialise a specific GPIO pin.
+*     GPIO_State        - Change the state of a GPIO pin (Low/False - High/True).
+*     GPIO_Direction    - Change the direction of a GPIO pin (Input/False - Output/True).
+*   -----------------
 */
 #include "gpio.h"
 
@@ -11,30 +20,12 @@
 * Usage:
 *   Called by driver.c to initiate GPIO ports.
 */
-void gpio_init() {
+void GPIO_Init() {
     // Initiate used GPIO Ports, others can be enabled using same layout, i.e. __GPIOx_CLK_ENABLE() where x is the desired port.
     __GPIOA_CLK_ENABLE();
     __GPIOB_CLK_ENABLE();
     __GPIOG_CLK_ENABLE();
-    __GPIOH_CLK_ENABLE();
-    
-
-    /*
-    // Initialise structure used by required digital output.
-    GPIO_InitTypeDef GPIO_InitStruct;
-
-    // This first initialisation needs to occur for all others to work.
-    GPIO_InitStruct.Pin = GPIO_PIN_13;
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;
-    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-    // This output needs to be set to high for all outputs to work.
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET);
-    */
-
-   
+    __GPIOH_CLK_ENABLE();  
 }
 
 /*
@@ -47,7 +38,7 @@ void gpio_init() {
 *   Called by driver.c to initiate led pins.
 *   Can be used by any other GPIO if required.
 */
-void gpio_pin_init(GPIO_Struct *gpio_object, char gpioPort, int gpioPin, bool direction) {
+void GPIO_Pin_Init(GPIO_Struct *gpio_object, char gpioPort, int gpioPin, bool direction) {
     // Set the GPIO port of the gpio object according to the gpioPort parameter.
     switch (gpioPort) {
     case 'A':
@@ -138,7 +129,7 @@ void gpio_pin_init(GPIO_Struct *gpio_object, char gpioPort, int gpioPin, bool di
 *   Used to either turn a digital output on or off, e.g.
 *   gpio_state(&BSP_led, true) // To turn on the BSP led.
 */
-void gpio_state(GPIO_Struct *gpio_object, bool state)
+void GPIO_State(GPIO_Struct *gpio_object, bool state)
 {
   if (state) {
     HAL_GPIO_WritePin(gpio_object->GPIO_Port, gpio_object->GPIO_InitSt.Pin, GPIO_PIN_SET);
@@ -156,7 +147,7 @@ void gpio_state(GPIO_Struct *gpio_object, bool state)
 * Usage:
 *   Used by led_array_control() as certain GPIOs need to be set to inputs for other outputs to work.
 */
-void gpio_direction(GPIO_Struct *gpio_object, bool direction) {
+void GPIO_Direction(GPIO_Struct *gpio_object, bool direction) {
   HAL_GPIO_DeInit(gpio_object->GPIO_Port, gpio_object->GPIO_InitSt.Pin);
   if (direction) {
     gpio_object->GPIO_InitSt.Mode = GPIO_MODE_OUTPUT_PP;
@@ -167,3 +158,5 @@ void gpio_direction(GPIO_Struct *gpio_object, bool direction) {
   }
   HAL_GPIO_Init(gpio_object->GPIO_Port, &gpio_object->GPIO_InitSt);
 }
+
+
