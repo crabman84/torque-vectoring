@@ -1,4 +1,4 @@
-tetsing git config url. Delet after problem has been resolved!!!
+
 # torque-vectoring
 For the 2020 SEPA group working on torque vectoring control system and dashboard using a microcontroller!
 
@@ -11,7 +11,7 @@ At start of every commit message should be the follwing:
 
 #### 1.   "+": to show code(should be not a small amount )) was added
 #### 2.   "-": to show code(should be not a small amount ) was taken away
-#### 3.   "o": to show code was changed(stuf may have been deleted and may have been added but nothing major has been added or deleted)
+#### 3.   "o": to show code was changed(stuff may have been deleted and may have been added but nothing major has been added or deleted)
 
 ## How to add your new code to the Git repo:
 
