@@ -1,0 +1,4 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Plugins 1
+PowerTrainXWD.CalebsLaunchControl = 1
+PowerTrainXWD.CalebsLaunchControl.Info = "My first launch control "
