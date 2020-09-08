@@ -4,7 +4,10 @@ function cmenv (varargin)		% -*- Mode: Fundamental -*-
 
     % CarMaker installation directory.
     if isempty(which('cmlocaldir'))
-	cminstdir = 'C:/IPG/carmaker/win64-8.1.1';
+	% cminstdir = 'C:/IPG/carmaker/win64-8.1.1';
+    %Linux Directory  may change based on ones own Linux distribution...
+    cminstdir = '/opt/ipg/carmaker/linux64-8.1.1';
+
     else
 	cminstdir = cmlocaldir	% for mat: CM-8.0
     end
