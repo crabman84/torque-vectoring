@@ -1,2 +1,0 @@
-Import('env')
-env.Prepend(CPPPATH=['C:/Users/tanselk/.platformio/packages/framework-mbed/features/unsupported/dsp', 'C:/Users/tanselk/.platformio/packages/framework-mbed/features/unsupported/dsp/cmsis_dsp', 'C:/Users/tanselk/.platformio/packages/framework-mbed/features/unsupported/dsp/dsp'])
