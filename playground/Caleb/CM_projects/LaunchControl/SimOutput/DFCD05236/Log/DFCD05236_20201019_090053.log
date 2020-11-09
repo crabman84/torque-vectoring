@@ -1,0 +1,21 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #156 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-10 13:24:30
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:03:58
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #156 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-10 13:24:30
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:04:56
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.460
+		Acceleration Time = 3.459 seconds
+TIME	12.197
+ERROR		Vehicle leaves road at about x=-458.733, y=-52.4962 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	12.199s	482.49m

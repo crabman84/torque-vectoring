@@ -1,0 +1,14 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Plugins 1
+PowerTrainXWD.CalebsLaunchControl = 1
+PowerTrainXWD.CalebsLaunchControl.Info = "My first launch control "
+PowerTrainXWD.CombinedTractionLaunchControl = 1
+PowerTrainXWD.CombinedTractionLaunchControl.Info = Combined Traction & Launch Control
+PowerTrainXWD.FinalSystem = 1
+PowerTrainXWD.FinalSystem.Info = Final System
+PowerTrainXWD.SAE_Powertrain = 1
+PowerTrainXWD.SAE_Powertrain.Info = SAE Powertrain
+PowerTrainXWD.ExperimentalPowertrain = 1
+PowerTrainXWD.ExperimentalPowertrain.Info = Experimental Powertrain
+PowerTrainXWD.RuleBasedTractionControl = 1
+PowerTrainXWD.RuleBasedTractionControl.Info = Rule Based TC

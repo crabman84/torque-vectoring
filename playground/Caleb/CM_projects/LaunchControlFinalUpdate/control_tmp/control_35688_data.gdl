@@ -1,0 +1,10 @@
+FILE data {
+    "C:/CM_Projects/LaunchControl/control_tmp/control_35688_data.raw"
+    BINARY
+    ARRAY[91040] OF RECORD {
+	bqTime_0 : DOUBLE
+    }
+    ARRAY[91040] OF RECORD {
+	qVhcl_FL_LongSlip_0 : DOUBLE
+    }
+}

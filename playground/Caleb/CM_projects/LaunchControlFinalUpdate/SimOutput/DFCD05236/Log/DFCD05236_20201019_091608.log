@@ -1,0 +1,503 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #157 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:13:06
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:16:47
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #157 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:13:06
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:17:44
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	32.178
+SIM_END		runOffRoad_CalebLaunchTest	32.174s	0.00300519m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #158 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:20:38
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:20:48
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	8.479
+		Acceleration Time = 8.478 seconds
+TIME	50.003
+SIM_END		runOffRoad_CalebLaunchTest	50.002s	938.53m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #159 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:31:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 09:32:07
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	47.344
+ERROR		Pitch angle too high (-80.08 deg)
+SIM_ABORT	runOffRoad_CalebLaunchTest	47.346s	1622.63m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #159 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:31:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:03:45
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	47.344
+ERROR		Pitch angle too high (-80.08 deg)
+SIM_ABORT	runOffRoad_CalebLaunchTest	47.346s	1622.63m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #159 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:31:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:06:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	19.128
+SIM_END		runOffRoad_CalebLaunchTest	19.124s	563.773m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #159 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 09:31:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:07:33
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	47.344
+ERROR		Pitch angle too high (-80.08 deg)
+SIM_ABORT	runOffRoad_CalebLaunchTest	47.346s	1622.63m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #160 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:20:22
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:20:50
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	47.344
+ERROR		Pitch angle too high (-80.08 deg)
+SIM_ABORT	runOffRoad_CalebLaunchTest	47.346s	1622.63m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #161 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:23:12
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:23:22
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.761
+		Acceleration Time = 4.760 seconds
+TIME	47.344
+ERROR		Pitch angle too high (-80.08 deg)
+SIM_ABORT	runOffRoad_CalebLaunchTest	47.346s	1622.63m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #163 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:40:04
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:40:15
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Embedded FARoadSensor Geo:  xyz (-71092379172216992.00 135137282349429936.00 -858611187973132928.00) not found on Road
+ERROR		Roll angle too high (4896095282667573.00 deg)
+ERROR		Pitch angle too high (-119477914492599248.00 deg)
+ERROR		Wheelspeed too high of tire 0: -60176423923909797085184.000
+ERROR		Wheelspeed too high of tire 1: -60176423923909797085184.000
+ERROR		Wheelspeed too high of tire 2: -60202781978252227379200.000
+ERROR		Wheelspeed too high of tire 3: -60202795929165090521088.000
+SIM_ABORT	runOffRoad_CalebLaunchTest	0.004s	6.4345m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #164 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:40:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:41:05
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	5.445
+		Acceleration Time = 5.444 seconds
+TIME	50.003
+SIM_END		runOffRoad_CalebLaunchTest	50.002s	1900.11m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #164 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:40:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:42:13
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	5.445
+		Acceleration Time = 5.444 seconds
+TIME	50.003
+SIM_END		runOffRoad_CalebLaunchTest	50.002s	1900.11m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #165 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:43:51
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:44:04
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	5.445
+		Acceleration Time = 5.444 seconds
+TIME	50.003
+SIM_END		runOffRoad_CalebLaunchTest	50.002s	1693.22m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #167 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:46:20
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:46:31
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	5.445
+		Acceleration Time = 5.444 seconds
+TIME	50.003
+SIM_END		runOffRoad_CalebLaunchTest	50.002s	1693.22m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #167 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:46:20
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:48:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.875
+ERROR		Vehicle leaves road at about x=-26.482, y=10.9295 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	3.877s	31.1046m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #167 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:46:20
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:49:01
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.875
+ERROR		Vehicle leaves road at about x=-26.482, y=10.9295 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	3.877s	31.1046m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #167 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:46:20
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:49:38
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	249.747
+		Lap Time = 125.136 secomds
+SIM_END		runOffRoad_CalebLaunchTest	249.749s	1523.98m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #168 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:54:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:54:50
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #168 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 10:54:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 10:59:18
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #169 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 11:02:49
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 11:03:07
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	249.747
+		Lap Time = 125.136 secomds
+SIM_END		runOffRoad_CalebLaunchTest	249.749s	1523.98m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #171 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 11:39:38
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 11:39:50
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.431
+SIM_END		runOffRoad_CalebLaunchTest	33.427s	172.136m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #172 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 11:40:42
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 11:40:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #173 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 11:43:07
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 11:43:21
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Wheelspeed too high of tire 0: +3701.591
+SIM_ABORT	runOffRoad_CalebLaunchTest	0.087s	0.107979m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #174 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 11:44:03
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 11:44:16
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #175 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:38:11
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:38:22
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Wheelspeed too high of tire 3: -3602.364
+SIM_ABORT	runOffRoad_CalebLaunchTest	0.112s	0.0973046m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #176 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:39:21
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:39:46
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	28.717
+SIM_END		runOffRoad_CalebLaunchTest	28.713s	159.171m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #177 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:43:58
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:44:09
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Caleb.TorqueRequest'
+
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Caleb.PidOutput'
+
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Caleb.IfOutput'
+
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Caleb.TorqueOut'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #178 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:46:07
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:46:25
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #180 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:49:49
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:50:04
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #181 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:51:24
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:51:35
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	17.103
+ERROR		Vehicle leaves road at about x=-10.1993, y=42.9135 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	17.105s	13.127m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #181 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:51:24
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:52:31
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	17.103
+ERROR		Vehicle leaves road at about x=-10.1993, y=42.9135 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	17.105s	13.127m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #182 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:54:16
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:54:29
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.744
+ERROR		Vehicle leaves road at about x=-12.9749, y=32.6065 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.746s	9.26424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #182 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:54:16
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:54:37
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.744
+ERROR		Vehicle leaves road at about x=-12.9749, y=32.6065 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.746s	9.26424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #183 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 12:55:25
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 12:55:38
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	252.039
+		Lap Time = 125.103 secomds
+SIM_END		runOffRoad_CalebLaunchTest	252.041s	1523.98m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #185 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:04:57
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:05:07
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.741
+ERROR		Vehicle leaves road at about x=-12.9989, y=32.6402 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.743s	9.19591m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #186 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:07:39
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:07:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.741
+ERROR		Vehicle leaves road at about x=-12.9989, y=32.6402 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.743s	9.19591m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #186 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:07:39
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:08:06
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.741
+ERROR		Vehicle leaves road at about x=-12.9989, y=32.6402 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.743s	9.19591m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #186 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:07:39
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:08:39
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.741
+ERROR		Vehicle leaves road at about x=-12.9989, y=32.6402 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.743s	9.19591m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #187 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:09:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:09:37
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	41.470
+SIM_END		runOffRoad_CalebLaunchTest	41.466s	212.096m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #188 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:11:26
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:11:30
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.218
+SIM_END		runOffRoad_CalebLaunchTest	33.214s	166.213m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #189 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:13:25
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:13:29
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	33.006
+ERROR		Vehicle leaves road at about x=88.2469, y=121.221 TireNo=2
+SIM_ABORT	runOffRoad_CalebLaunchTest	33.008s	182.005m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #190 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:16:53
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:17:18
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Vehicle leaves road at about x=-20.1986, y=26.9042 TireNo=3
+SIM_ABORT	runOffRoad_CalebLaunchTest	1.587s	12.5629m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #191 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:19:06
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:19:17
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	19.204
+ERROR		Vehicle leaves road at about x=19.15, y=14.8393 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	19.206s	86.7465m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #192 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:56:21
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:56:38
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	19.204
+ERROR		Vehicle leaves road at about x=19.15, y=14.8393 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	19.206s	86.7465m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #192 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:56:21
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 13:58:30
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	19.204
+ERROR		Vehicle leaves road at about x=19.15, y=14.8393 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	19.206s	86.7465m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #192 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 13:56:21
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:12:56
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	19.204
+ERROR		Vehicle leaves road at about x=19.15, y=14.8393 TireNo=0
+SIM_ABORT	runOffRoad_CalebLaunchTest	19.206s	86.7465m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #193 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:18:51
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:19:02
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	10.171
+ERROR		Vehicle leaves road at about x=-19.6417, y=3.9412 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	10.173s	38.6698m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #194 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:19:53
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:20:05
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	27.858
+SIM_END		runOffRoad_CalebLaunchTest	27.854s	131.244m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #195 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:23:56
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:24:08
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.782
+ERROR		Vehicle leaves road at about x=-21.9193, y=29.8916 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	4.784s	23.3084m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #195 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:23:56
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:24:34
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.782
+ERROR		Vehicle leaves road at about x=-21.9193, y=29.8916 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	4.784s	23.3084m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #196 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:28:28
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:28:40
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	10.171
+ERROR		Vehicle leaves road at about x=-19.6417, y=3.9412 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	10.173s	38.6698m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #197 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:31:39
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:31:49
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	10.171
+ERROR		Vehicle leaves road at about x=-19.6417, y=3.9412 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	10.173s	38.6698m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #198 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:35:06
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:35:17
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	249.839
+		Lap Time = 125.144 secomds
+SIM_END		runOffRoad_CalebLaunchTest	249.841s	1524.03m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #198 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 14:35:06
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 14:48:10
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	29.255
+SIM_END		runOffRoad_CalebLaunchTest	29.251s	144.168m

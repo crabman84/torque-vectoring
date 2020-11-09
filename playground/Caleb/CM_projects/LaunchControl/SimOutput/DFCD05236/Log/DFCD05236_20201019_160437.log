@@ -1,0 +1,76 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #199 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:04:13
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:06:55
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.1'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #199 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:04:13
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:07:49
+TIME	0.001
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	39.665
+SIM_END		runOffRoad_CalebLaunchTest	39.661s	0.00324235m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #199 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:04:13
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:08:36
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	100.003
+SIM_END		runOffRoad_CalebLaunchTest	100.002s	602.667m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #199 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:04:13
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:16:08
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	60.734
+SIM_END		runOffRoad_CalebLaunchTest	60.73s	345.62m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #200 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:18:08
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:18:55
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	100.003
+SIM_END		runOffRoad_CalebLaunchTest	100.002s	548.023m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #201 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:25:29
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:25:43
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	100.003
+SIM_END		runOffRoad_CalebLaunchTest	100.002s	595.923m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #201 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:25:29
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:27:43
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	71.408
+SIM_END		runOffRoad_CalebLaunchTest	71.404s	393.477m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #202 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:29:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:29:42
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	59.782
+SIM_END		runOffRoad_CalebLaunchTest	59.778s	316.81m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #202 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-19 16:29:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-19 16:31:01
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	100.003
+SIM_END		runOffRoad_CalebLaunchTest	100.002s	968.598m

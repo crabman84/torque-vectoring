@@ -1,0 +1,31 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #2032 (win64-8.1.1)
+COMPILED	fh@obelix.ipg 2019-12-19 16:22:18
+FIRST_INIT	(internal default used)	2020-10-24 14:51:52
+TIME	0.000
+SIM_END			0s	0m
+IDLE	14:51:52
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 14:51:55
+TIME	0.007
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+SIM_ABORT	runOffRoad_CalebLaunchTest_MAN	0s	0m
+TIME	12.311
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 14:53:57
+TIME	0.014
+ERROR		PowerTrain.PTXWD: Unknown kind 'FinalSystem', version 1
+SIM_ABORT	runOffRoad_CalebLaunchTest_MAN	0s	0m
+TIME	3.464
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 14:54:32
+TIME	0.014
+ERROR		PowerTrain.PTXWD: Unknown kind 'FinalSystem', version 1
+SIM_ABORT	runOffRoad_CalebLaunchTest_MAN	0s	0m
+TIME	2.086
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 14:54:52
+TIME	0.014
+ERROR		PowerTrain.PTXWD: Unknown kind 'CombinedTractionLaunchControl', version 1
+SIM_ABORT	runOffRoad_CalebLaunchTest_MAN	0s	0m
+TIME	2.228
+SHUTDOWN	CarMaker quick shutdown initiated
+

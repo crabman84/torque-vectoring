@@ -1,0 +1,717 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-07 17:34:15
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	unknown	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-07 17:34:33
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.0'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	unknown	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-07 17:35:56
+TIME	0.001
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.1'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	unknown	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-07 17:36:40
+TIME	0.000
+SIMULATE	unknown
+
+TIME	92.332
+SIM_END		unknown	92.328s	565.649m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-08 10:05:39
+TIME	0.000
+SIMULATE	unknown
+
+TIME	4.828
+SIM_END		unknown	4.824s	3.32024m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-08 10:06:13
+TIME	0.000
+SIMULATE	unknown
+
+TIME	24.472
+SIM_END		unknown	24.468s	75.125m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	unknown	2020-09-08 10:07:12
+TIME	0.000
+SIMULATE	unknown
+
+TIME	11.512
+SIM_END		unknown	11.508s	18.2988m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 10:09:20
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.0'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 10:10:07
+TIME	0.001
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.1'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 10:10:28
+TIME	0.001
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.0'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #1 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-07 17:31:52
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 10:10:48
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	36.335
+SIM_END		Hockenheim500_CalebLaunchTest	36.331s	147.892m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #2 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 10:14:08
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 10:14:21
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	59.158
+SIM_END		Hockenheim500_CalebLaunchTest	59.154s	1113.57m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #3 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 11:31:24
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 11:32:37
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	110.519
+SIM_END		Hockenheim500_CalebLaunchTest	110.515s	2160.24m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #7 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 11:46:59
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 11:48:14
+TIME	0.001
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.1'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #7 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 11:46:59
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 11:48:41
+TIME	0.001
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	119.630
+SIM_END		Hockenheim500_CalebLaunchTest	119.626s	0.0308078m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #7 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 11:46:59
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-08 11:50:47
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	47.141
+SIM_END		Hockenheim500_CalebLaunchTest	47.137s	855.884m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #9 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 12:09:01
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 15:25:37
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #9 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 12:09:01
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 15:27:38
+TIME	0.001
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.0'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	Hockenheim500_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #9 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-08 12:09:01
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 15:28:10
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	241.659
+SIM_END		Hockenheim500_CalebLaunchTest	241.655s	4951.7m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #10 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 15:34:11
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 15:35:05
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	500.003
+SIM_END		Hockenheim500_CalebLaunchTest	500.002s	10583.3m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #11 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 15:50:03
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 15:50:16
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	50.274
+SIM_END		Hockenheim500_CalebLaunchTest	50.27s	902.558m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #12 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:05:30
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:05:52
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	97.424
+SIM_END		Hockenheim500_CalebLaunchTest	97.42s	1941.18m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #12 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:05:30
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:07:38
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.633
+SIM_END		Hockenheim500_CalebLaunchTest	3.629s	17.4391m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #12 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:05:30
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:07:45
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.363
+SIM_END		Hockenheim500_CalebLaunchTest	3.359s	14.7908m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:19:20
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.377
+SIM_END		Hockenheim500_CalebLaunchTest	3.373s	14.9228m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:19:49
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	9.483
+SIM_END		Hockenheim500_CalebLaunchTest	9.479s	127.576m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:20:16
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+SIM_END		Hockenheim500_CalebLaunchTest	1.24s	1.56702m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:28:51
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	7.577
+SIM_END		Hockenheim500_CalebLaunchTest	7.573s	80.7496m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:29:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	21.746
+SIM_END		Hockenheim500_CalebLaunchTest	21.742s	397.616m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #13 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:18:48
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:34:12
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	4.164
+SIM_END		Hockenheim500_CalebLaunchTest	4.16s	23.2819m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #14 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:44:55
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:45:04
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	5.977
+SIM_END		Hockenheim500_CalebLaunchTest	5.973s	51.0537m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #14 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:44:55
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:45:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	6.118
+SIM_END		Hockenheim500_CalebLaunchTest	6.114s	53.5426m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #14 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:44:55
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:45:35
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	2.624
+SIM_END		Hockenheim500_CalebLaunchTest	2.62s	9.26819m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #14 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:44:55
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:47:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.402
+SIM_END		Hockenheim500_CalebLaunchTest	3.398s	15.9787m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #16 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:49:53
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:50:51
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	19.454
+SIM_END		Hockenheim500_CalebLaunchTest	19.45s	0.0246961m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #16 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:49:53
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-14 16:51:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	7.342
+SIM_END		Hockenheim500_CalebLaunchTest	7.338s	0.0160507m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #16 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:49:53
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 09:44:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	44.771
+SIM_END		Hockenheim500_CalebLaunchTest	44.767s	0.0274339m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #16 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-14 16:49:53
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 09:45:05
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	2.058
+SIM_END		Hockenheim500_CalebLaunchTest	2.054s	0.00595193m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #17 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 09:48:27
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 09:48:57
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.672
+SIM_END		Hockenheim500_CalebLaunchTest	3.668s	17.8396m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #18 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 10:41:31
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 10:42:14
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	10.799
+SIM_END		Hockenheim500_CalebLaunchTest	10.795s	0.0660405m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #18 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 10:41:31
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 10:42:52
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	15.015
+SIM_END		Hockenheim500_CalebLaunchTest	15.011s	0.0917394m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #19 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 10:43:53
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 10:44:07
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	37.843
+SIM_END		Hockenheim500_CalebLaunchTest	37.839s	709.757m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #20 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 10:45:15
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 10:45:31
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	22.934
+SIM_END		Hockenheim500_CalebLaunchTest	22.93s	0.139833m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #20 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 10:45:15
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:13:25
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	13.192
+SIM_END		Hockenheim500_CalebLaunchTest	13.188s	0.0808188m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #21 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:14:25
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:14:47
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.602
+		Accel Time = 8.601 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.709s	75.0221m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #21 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:14:25
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:15:20
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	2.282
+SIM_END		Hockenheim500_CalebLaunchTest	2.278s	3.31608m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #22 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:20:19
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:20:46
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	2.046
+SIM_END		Hockenheim500_CalebLaunchTest	2.042s	2.59412m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #22 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:20:19
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:21:09
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	3.388
+SIM_END		Hockenheim500_CalebLaunchTest	3.384s	8.20367m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #22 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:20:19
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:21:16
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.602
+		Accel Time = 8.601 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.709s	75.0221m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #23 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:22:42
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:22:56
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	2.881
+SIM_END		Hockenheim500_CalebLaunchTest	2.877s	5.6452m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #23 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:22:42
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:23:06
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.602
+		Accel Time = 8.601 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.709s	75.0221m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #24 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:24:21
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:24:43
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.724
+		Accel Time = 8.723 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.832s	75.0377m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #24 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:24:21
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:25:01
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+SIM_END		Hockenheim500_CalebLaunchTest	0.614s	0.157762m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #24 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:24:21
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:25:32
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.724
+		Accel Time = 8.723 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.832s	75.0377m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #25 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:26:27
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:26:50
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.602
+		Accel Time = 8.601 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.709s	75.0221m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #26 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:29:00
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:29:13
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.537
+		Accel Time = 8.536 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.644s	75.0263m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #26 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:29:00
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:31:22
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.537
+		Accel Time = 8.536 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.644s	75.0263m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #26 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:29:00
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:32:46
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.537
+		Accel Time = 8.536 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.644s	75.0263m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #29 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:34:08
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:37:12
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.440
+		Accel Time = 8.439 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.548s	75.0286m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #30 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:38:31
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:38:39
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.466
+		Accel Time = 8.465 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.574s	75.0383m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #31 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:39:57
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:40:05
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.588
+		Accel Time = 8.587 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.695s	75.0257m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #32 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:41:16
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:41:28
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.457
+		Accel Time = 8.456 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.565s	75.0289m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #33 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:42:28
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:42:47
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.581
+		Accel Time = 8.580 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.689s	75.0278m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #34 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:45:00
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:45:15
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.373
+		Accel Time = 8.372 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.48s	75.0249m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #35 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:47:16
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:47:29
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.366
+		Accel Time = 8.365 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.474s	75.0278m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #36 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:48:54
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 11:49:12
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.385
+		Accel Time = 8.384 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.493s	75.04m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #36 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:48:54
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:44:16
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.385
+		Accel Time = 8.384 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.493s	75.04m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #36 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 11:48:54
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:45:19
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.385
+		Accel Time = 8.384 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.493s	75.04m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #37 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:47:21
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:47:34
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.385
+		Accel Time = 8.384 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.493s	75.04m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #38 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:48:56
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:49:46
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.854
+		Accel Time = 8.853 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.961s	75.0233m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #39 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:51:40
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:51:58
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.662
+		Accel Time = 8.661 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.77s	75.0371m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #40 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:53:50
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:54:01
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.662
+		Accel Time = 8.661 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.77s	75.0371m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #41 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:55:41
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:55:51
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	9.040
+		Accel Time = 9.039 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.147s	75.0288m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #41 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:55:41
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:56:13
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	9.040
+		Accel Time = 9.039 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.147s	75.0288m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #42 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:57:31
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:57:43
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.641
+		Accel Time = 8.640 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.748s	75.0253m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #43 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 15:59:10
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 15:59:20
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	9.262
+		Accel Time = 9.261 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.369s	75.0229m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #44 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:00:46
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:01:00
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.577
+		Accel Time = 8.576 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.685s	75.0364m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #45 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:02:21
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:02:28
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.374
+		Accel Time = 8.373 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.482s	75.035m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #46 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:03:43
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:03:58
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.409
+		Accel Time = 8.408 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.517s	75.0398m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #47 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:05:55
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:06:10
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	47.272
+SIM_END		Hockenheim500_CalebLaunchTest	47.268s	0.354829m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #48 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:08:34
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:08:47
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.901
+		Accel Time = 8.900 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.009s	75.0392m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #49 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:10:39
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:10:53
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.619
+		Accel Time = 8.618 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.727s	75.0322m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #50 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:12:14
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:12:36
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.943
+		Accel Time = 8.942 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.051s	75.0388m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #51 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:13:41
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:13:52
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.963
+		Accel Time = 8.962 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	9.07s	75.0201m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #52 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-09-21 16:14:54
+SIM_START	Hockenheim500_CalebLaunchTest	2020-09-21 16:15:05
+TIME	0.000
+SIMULATE	Hockenheim500_CalebLaunchTest
+
+TIME	8.219
+		Accel Time = 8.218 seconds
+SIM_END		Hockenheim500_CalebLaunchTest	8.327s	75.0398m

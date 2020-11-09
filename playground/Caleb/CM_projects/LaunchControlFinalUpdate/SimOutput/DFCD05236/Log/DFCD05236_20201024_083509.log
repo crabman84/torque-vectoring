@@ -1,0 +1,543 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #251 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 08:34:44
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 08:36:04
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #251 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 08:34:44
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 08:37:16
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	32.368
+SIM_END		runOffRoad_CalebLaunchTest	32.364s	607.852m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #251 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 08:34:44
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 08:38:32
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.057
+ERROR		Wheelspeed too high of tire 0: +3671.550
+ERROR		Wheelspeed too high of tire 1: +3631.390
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.059s	12.4889m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #252 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 08:39:07
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 08:39:18
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.833
+		Acceleration Time = 3.832 seconds
+SIM_END		runOffRoad_CalebLaunchTest	3.992s	80.065m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #253 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 08:40:19
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 08:40:36
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #254 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:18:17
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:18:37
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #254 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:18:17
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:18:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #255 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:25:28
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:25:50
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #255 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:25:28
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:26:09
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #256 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:37:08
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:37:20
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #256 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:37:08
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:37:46
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #257 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:48:46
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:50:02
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #258 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:50:35
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:51:00
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.833
+		Acceleration Time = 3.832 seconds
+SIM_END		runOffRoad_CalebLaunchTest	3.992s	80.065m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #258 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 09:50:35
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 09:51:17
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.833
+		Acceleration Time = 3.832 seconds
+SIM_END		runOffRoad_CalebLaunchTest	3.992s	80.065m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:30:10
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/IPG/carmaker/win64-8.1.1/Data/Vehicle/Examples/Examples_FS/FSX_OpenXWD'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	runOffRoad_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:31:25
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	5.544
+SIM_END		runOffRoad_CalebLaunchTest	5.54s	49.7788m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:31:50
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	124.420
+SIM_END		runOffRoad_CalebLaunchTest	124.416s	2777m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:34:11
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	91.495
+SIM_END		runOffRoad_CalebLaunchTest	91.491s	1937.95m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:36:11
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.283
+ERROR		Wheelspeed too high of tire 0: +3698.712
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.285s	17.3051m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #259 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:29:47
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:37:11
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	2.283
+ERROR		Wheelspeed too high of tire 0: +3698.712
+SIM_ABORT	runOffRoad_CalebLaunchTest	2.285s	17.3051m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #261 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:37:40
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:37:51
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.973
+		Acceleration Time = 3.972 seconds
+TIME	12.661
+ERROR		Vehicle leaves road at about x=-458.769, y=-48.5626 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	12.663s	479.172m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:38:48
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.973
+		Acceleration Time = 3.972 seconds
+TIME	12.661
+ERROR		Vehicle leaves road at about x=-458.769, y=-48.5626 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	12.663s	479.172m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:42:51
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	20.299
+ERROR		Vehicle leaves road at about x=-422.942, y=1.57821 TireNo=1
+SIM_ABORT	runOffRoad_CalebLaunchTest	20.301s	420.907m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:43:37
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	24.230
+SIM_END		runOffRoad_CalebLaunchTest	24.226s	565.589m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:44:29
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	27.518
+		Acceleration Time = 27.517 seconds
+TIME	30.738
+SIM_END		runOffRoad_CalebLaunchTest	30.737s	714.965m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:45:04
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	27.518
+		Acceleration Time = 27.517 seconds
+TIME	30.738
+SIM_END		runOffRoad_CalebLaunchTest	30.737s	714.965m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #262 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:38:37
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:45:40
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.243
+		Acceleration Time = 4.242 seconds
+TIME	29.296
+		Acceleration Time = 29.295 seconds
+TIME	32.515
+SIM_END		runOffRoad_CalebLaunchTest	32.514s	857.683m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #263 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:47:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:47:39
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	28.868
+		Acceleration Time = 28.867 seconds
+TIME	33.462
+SIM_END		runOffRoad_CalebLaunchTest	33.461s	632.012m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #263 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:47:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:49:24
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	16.868
+		Acceleration Time = 16.867 seconds
+TIME	21.584
+SIM_END		runOffRoad_CalebLaunchTest	21.583s	626.873m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #263 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:47:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:49:54
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	13.868
+		Acceleration Time = 13.867 seconds
+TIME	18.769
+SIM_END		runOffRoad_CalebLaunchTest	18.768s	273.113m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #263 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:47:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:50:30
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	8.868
+		Acceleration Time = 8.867 seconds
+TIME	13.769
+SIM_END		runOffRoad_CalebLaunchTest	13.768s	273.115m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #263 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:47:27
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:50:51
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	6.868
+		Acceleration Time = 6.867 seconds
+TIME	11.051
+SIM_END		runOffRoad_CalebLaunchTest	11.05s	264.432m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #264 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:51:40
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:51:45
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Wheelspeed too high of tire 1: +3654.373
+SIM_ABORT	runOffRoad_CalebLaunchTest	1.068s	2.07376m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #264 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:51:40
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:52:29
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+ERROR		Wheelspeed too high of tire 1: +3654.373
+SIM_ABORT	runOffRoad_CalebLaunchTest	1.068s	2.07376m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:53:19
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	7.167
+		Acceleration Time = 7.166 seconds
+TIME	14.827
+SIM_END		runOffRoad_CalebLaunchTest	14.826s	223.458m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:54:01
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	7.167
+		Acceleration Time = 7.166 seconds
+TIME	14.777
+SIM_END		runOffRoad_CalebLaunchTest	14.776s	215.326m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:54:30
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+		Acceleration Time = 5.166 seconds
+TIME	7.810
+SIM_END		runOffRoad_CalebLaunchTest	7.809s	190.093m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:54:47
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+		Acceleration Time = 5.166 seconds
+TIME	7.810
+SIM_END		runOffRoad_CalebLaunchTest	7.809s	190.093m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:55:53
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+		Acceleration Time = 6.000 seconds
+TIME	8.220
+SIM_END		runOffRoad_CalebLaunchTest	8.219s	226.998m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:56:21
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	11.001
+		Acceleration Time = 11.000 seconds
+TIME	18.514
+SIM_END		runOffRoad_CalebLaunchTest	18.513s	386.96m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:57:20
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	11.001
+		Acceleration Time = 11.000 seconds
+TIME	16.743
+SIM_END		runOffRoad_CalebLaunchTest	16.742s	405.29m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 10:58:38
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	10.001
+		Acceleration Time = 10.000 seconds
+TIME	13.572
+SIM_END		runOffRoad_CalebLaunchTest	13.571s	391.59m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #265 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 10:52:54
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:01:37
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.111
+		Acceleration Time = 4.110 seconds
+TIME	15.001
+		Acceleration Time = 15.000 seconds
+TIME	18.326
+SIM_END		runOffRoad_CalebLaunchTest	18.325s	441.596m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #266 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:03:01
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:03:28
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	15.001
+		Acceleration Time = 15.000 seconds
+SIM_END		runOffRoad_CalebLaunchTest	16.713s	630.424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #266 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:03:01
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:04:01
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	15.001
+		Acceleration Time = 15.000 seconds
+SIM_END		runOffRoad_CalebLaunchTest	16.713s	630.424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #266 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:03:01
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:04:46
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	15.001
+		Acceleration Time = 15.000 seconds
+SIM_END		runOffRoad_CalebLaunchTest	16.713s	630.424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #266 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:03:01
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:06:09
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	15.001
+		Acceleration Time = 15.000 seconds
+SIM_END		runOffRoad_CalebLaunchTest	16.713s	630.424m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #266 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:03:01
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:06:57
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	3.820
+		Acceleration Time = 3.819 seconds
+TIME	18.001
+		Acceleration Time = 18.000 seconds
+SIM_END		runOffRoad_CalebLaunchTest	19.765s	637.5m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #267 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:17:07
+SIM_START	runOffRoad_CalebLaunchTest	2020-10-24 11:17:26
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest
+
+TIME	4.632
+		Acceleration Time = 4.631 seconds
+TIME	18.001
+		Acceleration Time = 18.000 seconds
+TIME	20.932
+SIM_END		runOffRoad_CalebLaunchTest	20.931s	445.456m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #267 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:17:07
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 11:18:49
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest_MAN
+
+TIME	4.746
+		Acceleration Time = 4.745 seconds
+SIM_END		runOffRoad_CalebLaunchTest_MAN	4.975s	80.0386m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #267 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:17:07
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 11:19:06
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest_MAN
+
+TIME	4.746
+		Acceleration Time = 4.745 seconds
+SIM_END		runOffRoad_CalebLaunchTest_MAN	4.975s	80.0386m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #268 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:21:03
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 11:21:14
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest_MAN
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest_MAN	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #268 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:21:03
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 11:21:58
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest_MAN
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		runOffRoad_CalebLaunchTest_MAN	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #269 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-24 11:24:34
+SIM_START	runOffRoad_CalebLaunchTest_MAN	2020-10-24 11:25:04
+TIME	0.000
+SIMULATE	runOffRoad_CalebLaunchTest_MAN
+
+TIME	4.746
+		Acceleration Time = 4.745 seconds
+SIM_END		runOffRoad_CalebLaunchTest_MAN	4.975s	80.0386m

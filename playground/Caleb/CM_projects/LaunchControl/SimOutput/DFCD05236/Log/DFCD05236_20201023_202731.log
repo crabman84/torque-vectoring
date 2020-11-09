@@ -1,0 +1,186 @@
+APPLICATION	CarMaker 8.1.1 - Car_Generic #233 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:33:23
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:34:18
+TIME	0.001
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_195_50R13': No such file or directory
+ERROR		Tire: Can't read file 'Data/Tire/Examples/FS_205_50R13': No such file or directory
+WARNING		PowerTrain OpenXWD: No selected PowerTrainXWD model; calculation using DVA is possible, but without 'integration substepping'
+ERROR		No entry 'PowerTrain.DL.DriveSourcePos', file 'C:/CM_Projects/LaunchControl/Data/Vehicle/.tmp_dfcd05236_caleb.1'
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #233 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:33:23
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:35:17
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	2.057
+ERROR		Wheelspeed too high of tire 0: +3671.550
+ERROR		Wheelspeed too high of tire 1: +3631.390
+SIM_ABORT	accelerationTest_CalebLaunchTest	2.059s	12.4889m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #234 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:35:45
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:35:52
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	2.057
+ERROR		Wheelspeed too high of tire 0: +3671.550
+ERROR		Wheelspeed too high of tire 1: +3631.390
+SIM_ABORT	accelerationTest_CalebLaunchTest	2.059s	12.4889m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #236 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:36:31
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:36:41
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #237 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:37:48
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:38:01
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #237 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:37:48
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:38:26
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #238 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:43:23
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:43:47
+TIME	1203.852
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Vhcl.FL.rBelt_eff'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #239 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:46:03
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:46:16
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #239 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 20:46:03
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 20:46:36
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #240 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:06:39
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:06:52
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Vhcl.FL.Radius'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #241 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:08:35
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:08:52
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'PowerTrain.DL.iDiff'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #242 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:10:38
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:10:48
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'PlanetGear.Ratio'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #243 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:11:42
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:11:53
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #244 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:15:05
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:15:17
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #245 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:16:10
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:16:20
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Vhcl.FL.rBelt_eff'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #246 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:17:31
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:17:39
+TIME	0.003
+ERROR		Model 'CombinedTractionLaunchControl': Unknown quantity 'Vhcl.FL.rBeltEff'
+
+ERROR		CM_Main.c: Initialization failed (CM_Main_Begin()=-3)
+SIM_ABORT	accelerationTest_CalebLaunchTest	0s	0m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #248 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:28:30
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:28:56
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #248 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:28:30
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:29:18
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #249 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:36:58
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:37:14
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #250 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:39:59
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:40:16
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m
+APPLICATION	CarMaker 8.1.1 - Car_Generic #250 (win64-8.1.1)
+COMPILED	caleb@dfcd05236 2020-10-23 23:39:59
+SIM_START	accelerationTest_CalebLaunchTest	2020-10-23 23:40:37
+TIME	0.000
+SIMULATE	accelerationTest_CalebLaunchTest
+
+TIME	4.113
+		Acceleration Time = 4.112 seconds
+SIM_END		accelerationTest_CalebLaunchTest	4.298s	80.0708m

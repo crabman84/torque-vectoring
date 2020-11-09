@@ -1,0 +1,230 @@
+
+# $Id: default_ipg.gdl,v 1.1.1.1 2016/06/01 12:02:43 fh Exp $
+
+# Name des Plot-Frames mit Breite und Hoehe.
+
+# Praefix der Legende-Frames mit Anzahl Frames und Anzahl Zeilen pro Frame.
+
+#-----------------------------------------------------------
+
+papersize DINA4
+paperorientation landscape
+
+frame DEFAULT {
+	edgecolor	black
+	interiorcolor	white
+	style		"--"
+	thickness	0.03
+	noshadow
+	font		"Helvetica"
+	fontsize	0.4
+	textcolor	black
+	autoclear
+}
+
+line DEFAULT {
+	color		black
+	thickness	0.2
+        style		solid
+}
+
+grid DEFAULT {
+        kind		lined
+        color		gray
+        style		solid
+        thickness	0.01
+}
+
+axis DEFAULT {
+        scaling		linear
+        color		black
+        style		"--"
+        thickness	0.03
+        majorticklength	0.15
+        minorticklength	0.06
+        labelformat	automatic
+	font		"Helvetica"
+        fontsize	0.3
+        textcolor	black
+	tickdirection	same
+#	snapmajorticks
+#	gridevery	same
+	notarrowed
+	notconnected
+	majortickevery	5
+	noreverseaxis
+	notemphasized
+}
+
+plot2d DEFAULT {
+	color		automatic
+        edgecolor	automatic
+        interiorcolor	automatic
+        style		automatic
+        symbol		automatic
+        kind		lined
+        thickness	0.03
+}
+
+
+###################
+
+frame lochungsteilung {
+        at 14.85, 20
+        size 1, 1
+        interiorcolor none
+        edgecolor none
+	noautoclear
+}
+line { 0.0, 0.2, 0.0, 0.8
+        in lochungsteilung
+        style "--"
+        thickness 0.01
+}
+
+frame programm {
+	at 1.6, 1.6
+	size 4.4, 1.5
+	fontsize 0.5
+	noautoclear
+}
+
+frame titel {
+	at 6.0, 1.6
+	size 17.5, 1.5
+	fontsize 0.6
+	noautoclear
+}
+
+frame rahmenzulogo {
+	at 23.5, 1.6
+	size 4.4, 1.5
+	noautoclear
+}
+
+frame logo {
+	at 0.2, 0.2
+	size 4.0, 1.1
+	adjustto rahmenzulogo
+        edgecolor none
+	interiorcolor none
+	fontsize 0.4
+	textcolor black
+	noautoclear
+}
+
+frame datumzeitundseite {
+	at 20.5, 1
+	size 7.4, .4
+	edgecolor none
+	interiorcolor none
+	fontsize 0.2
+	alignment center right
+	noautoclear
+}
+
+print datumzeitundseite { currentDate " - " currentTime }
+
+
+#-----------------------------------------------------------
+
+frame DEFAULT {
+	edgecolor none
+	interiorcolor none
+}
+
+#-----------------------------------------------------------
+
+frame zeichnung {
+	at 1.6, 3.1
+	size 26.3, 15.5
+	edgecolor black
+}
+
+frame plotbox {
+	at 0.0, 2.0
+	size 26.3, 13.5
+	adjustto zeichnung
+}
+
+frame DEFAULT {
+	fontsize 0.3
+	alignment top left
+}
+
+grid gitter {
+        kind		lined
+        color		gray
+        style		solid
+        thickness	0.01
+}
+
+#-----------------------------------------------------------
+
+frame legendbox_0 {
+	at 1.0, 0.0
+	size 6.0, 2.0
+	adjustto zeichnung
+}
+
+frame legendbox_1 {
+	at 7, 0.0
+	size 6.0, 2.0
+	adjustto zeichnung
+}
+
+frame legendbox_2 {
+	at 13, 0.0
+	size 6.0, 2.0
+	adjustto zeichnung
+}
+
+frame legendbox_3 {
+	at 19, 0.0
+	size 6.0, 2.0
+	adjustto zeichnung
+}
+
+#-----------------------------------------------------------
+
+print logo { "IPG Automotive GmbH\nKarlsruhe" }
+print programm { "IPGControl" }
+
+include "C:/CM_Projects/LaunchControl/control_tmp/control_35688_data.gdl"
+
+
+
+FRAME default {
+EDGECOLOR none INTERIORCOLOR none
+FONTSIZE .3 TEXTCOLOR black
+ALIGNMENT center center PATH right
+}
+AXIS yaxis_0 {
+    IN plotbox AT 2.0, 1.2 SIZE 0, 11.3
+    TICKLABEL left
+    SNAPMAJORTICKS
+}
+FRAME unit_0 { AT -1.5, 11.600000000000001 SIZE 3, 0.5 ADJUSTTO yaxis_0 }
+FRAME id_0 { AT -0.5, -1.1 SIZE 1, 0.5 ADJUSTTO yaxis_0 }
+PRINT id_0 { "(1)" }
+
+
+AXIS xaxis {
+    IN plotbox AT 2.0, 1.2 SIZE 23.8, 0
+    TICKLABEL below
+}
+FRAME xlegend {
+    AT 0.0, -1.2 SIZE 23.8, 0.5
+    ADJUSTTO xaxis
+}
+PRINT xlegend { "Time [s]" }
+PLOT2D plot_0 {
+    data.bqTime_0 xaxis MIN 0 MAX 4.851
+    data.qVhcl_FL_LongSlip_0 yaxis_0 MIN -0.29649 MAX 0.240238
+    COLOR red STYLE solid
+}
+print legendbox_0 { plot_0 " (1) Vhcl.FL.LongSlip (C1)" "\n" }
+
+PRINT titel { "Front Slip w/. Traction Control" }
+SHOWPAGE
+
